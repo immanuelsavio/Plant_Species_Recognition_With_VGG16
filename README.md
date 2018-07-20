@@ -16,13 +16,13 @@ The following python packages will be needed<br />
 3.Scikit-Learn<br />
 4.Glob<br />
 5.OpenCV<br />
-6.h5py<br />
+6.H5py<br />
 7.OS<br />
 8.JSON<br />
-9.datetime<br />
-10.time<br />
+9.Datetime<br />
+10.Time<br />
 11.TensorFlow<br />
-12.keras in tensorflow backend<br />
+12.Keras in tensorflow backend<br />
 
 ### Logic
 
