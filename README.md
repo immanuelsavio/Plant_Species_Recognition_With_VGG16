@@ -30,3 +30,6 @@ This neural network uses the pre-trained model of VGG16 from the Keras package t
 are kept in the output folder in files called features.h5 and labels.h5
 
 Then we use different classifing algorithms like K-nearest neighbour, Bagging, Logistic Regression etc to clssify the testing set. 
+
+### Datasets
+The four datasets namely [Folio](https://archive.ics.uci.edu/ml/datasets/Folio) , [Flavia](http://flavia.sourceforge.net/), [17Flower](http://www.robots.ox.ac.uk/~vgg/data/flowers/17/) and [Swedish](http://www.cvl.isy.liu.se/en/research/datasets/swedish-leaf/) can be downloaded from the above links
