@@ -26,7 +26,7 @@ The following python packages will be needed<br />
 
 ### Logic
 
-This neural network uses the pre-trained model of VGG16 from the Keras package to extract the features. Then the extracted features 
+This program uses the pre-trained convolutional neural network model of VGG16 from the Keras package to extract the features. Then the extracted features 
 are kept in the output folder in files called features.h5 and labels.h5
 
 Then we use different classifing algorithms like K-nearest neighbour, Bagging, Logistic Regression etc to clssify the testing set. 
