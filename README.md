@@ -24,6 +24,9 @@ The following python packages will be needed<br />
 11.TensorFlow<br />
 12.Keras in tensorflow backend<br />
 
+### Keras in Tensorflow Backend
+The above code uses keras package in tensorflow backend. To use it in the backend install tensorflow as er the instructions in the Keras with tensorflow website. Then navigate to your home and in the file .keras/keras.json add the code from the keras.json file in the repository. To use tensorflow it is recommended to use a virtual environment installation. To activate the virtual environment navigate to /home/<user>/tensorflow/venv/bin and then tyoe the command ```source activate```
+
 ### Logic
 
 This program uses the pre-trained convolutional neural network model of VGG16 from the Keras package to extract the features. Then the extracted features 
