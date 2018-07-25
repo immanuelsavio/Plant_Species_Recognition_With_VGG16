@@ -21,8 +21,10 @@ The following python packages will be needed<br />
 8.JSON<br />
 9.Datetime<br />
 10.Time<br />
-11.TensorFlow<br />
-12.Keras in tensorflow backend<br />
+11.cPickle<br />
+12.Seaborn<br />
+13.Tensorflow<br />
+14.Keras in tensorflow backend<br />
 
 ### Keras in Tensorflow Backend
 The above code uses keras package in tensorflow backend. To use it in the backend install tensorflow as er the instructions in the Keras with tensorflow website. Then navigate to your home and in the file .keras/keras.json add the code from the keras.json file in the repository. To use tensorflow it is recommended to use a virtual environment installation. To activate the virtual environment navigate to /home/<user>/tensorflow/venv/bin and then tyoe the command ```source activate```
