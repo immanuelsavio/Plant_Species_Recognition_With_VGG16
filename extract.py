@@ -41,7 +41,7 @@ start = time.time()
 # create the pretrained models
 # check for pretrained weight usage or not
 # check for top layers to be included or not
-base_model = VGG16(weights=weights, include_top = include_top)
+base_model = VGG16(weights=weights, include_top = include_top, input_shape(100,100,3))
 model = Model(input=base_model.input, output=base_model.output )
 image_size = (200 , 200)
 
