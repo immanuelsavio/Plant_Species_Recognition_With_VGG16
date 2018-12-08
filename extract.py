@@ -40,3 +40,44 @@ base_model = DenseNet121(include_top=include_top,weights=weights)
 model = Model(input=base_model.input, output=base_model.output)
 model.summary()
 
+train_labels = os.listdir(train_path)
+print("[INFO] encoding labels...")
+le = LabelEncoder() 
+le.fit([tl for tl in train_labels])#to find the best match
+features = []
+labels   = []
+i = 0
+for label in train_labels:
+  cur_path = train_path + "/" + label
+  for image_path in glob.glob(cur_path + "/*.png"):
+    img = image.load_img(image_path, target_size=(100,100))
+    x = image.img_to_array(img)
+    x = np.expand_dims(x, axis=0)# to expand the shape of array
+    x = preprocess_input(x)
+    print('image shape', x.shape)
+    feature = model.predict(x)#Generate the output predictions of input samples
+    flat = feature.flatten()#collapse to one dimension
+    features.append(flat) #add feature to end of list
+    labels.append(label)
+    print ("[INFO] processed - {}".format(i))
+    i += 1
+  print ("[INFO] completed label - {}".format(label))
+
+# encode the labels using LabelEncoder
+targetNames = np.unique(labels) #to extract unique labels
+le = LabelEncoder()
+le_labels = le.fit_transform(labels)
+print ("[STATUS] training labels: {}".format(le_labels))
+print ("[STATUS] training labels shape: {}".format(le_labels.shape))
+
+# save features and labels 
+h5f_data = h5py.File(features_path, 'w')
+h5f_data.create_dataset('dataset_1', data=np.array(features))
+
+h5f_label = h5py.File(labels_path, 'w')
+h5f_label.create_dataset('dataset_1', data=np.array(le_labels))
+h5f_data.close()
+h5f_label.close()
+
+print ("[STATUS] features and labels saved..")
+print ("[status]end time - {}" .format(datetime.datetime.now().strftime("%Y-%m-%d %H:%M")))
