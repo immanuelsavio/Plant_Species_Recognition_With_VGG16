@@ -14,10 +14,10 @@ The following python packages will be needed<br />
 1.Numpy<br />
 2.Scipy<br />
 3.Scikit-Learn<br />
-4.Glob<br />
-5.OpenCV<br />
+4.glob<br />
+5.OpenCV (cv2)<br />
 6.H5py<br />
-7.OS<br />
+7.os<br />
 8.JSON<br />
 9.Datetime<br />
 10.Time<br />
