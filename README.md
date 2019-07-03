@@ -1,6 +1,6 @@
 # Plant Species Recognition With VGG16
 
-<img src="logo.png" align="right"
+<img src="http://mitindia.edu/templates/ja_university_t3/images/logo.png" align="right"
      title="Madras Institute of Technology" width="150" height="178">
 
 Done as a part of my Summer Internship in Madras Institute of Technology Campus, Anna University, Chennai
