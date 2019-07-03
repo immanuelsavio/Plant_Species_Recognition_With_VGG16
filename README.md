@@ -1,6 +1,6 @@
 # Plant Species Recognition With VGG16
 
-<img src="logo.png" align="right"
+<img src="https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png" align="right"
      title="Madras Institute of Technology" width="50" height="50">
 
 Done as a part of my Summer Internship in Madras Institute of Technology Campus, Anna University, Chennai
