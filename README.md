@@ -1,8 +1,5 @@
 # Plant Species Recognition With VGG16
 
-<img src="logo.png" align="right"
-     title="Madras Institute of Technology" width="50" height="50">
-
 Done as a part of my Summer Internship in Madras Institute of Technology Campus, Anna University, Chennai
 This project deals with identification of different spiecies of plant by processing their leaves. The dataset is a collection of 4 available datasets namely
 Folio, Flavia, Swedish and 17Flower.
