@@ -3,8 +3,6 @@
 Done as a part of my Summer Internship in Madras Institute of Technology Campus, Anna University, Chennai
 This project deals with identification of different spiecies of plant by processing their leaves. The dataset is a collection of 4 available datasets namely
 Folio, Flavia, Swedish and 17Flower.
-This dataset also contains one more self made dataset called the Leaf-12.
-The Leaf-12 dataset has 12 species of leaves which have been photographed in different cameras, lighting conditions and backgrounds.
 
 ### Prerequisites
 
